@@ -42,6 +42,13 @@ const photos = [
     type: "Perfect World",
     image: "images/Liu shen-01.jpg"
   },
+  {
+    name: "Nakano miku",
+    title: "Gotobun no hanayome",
+    category: "Anime",
+    type: "Gotobun no hanayome",
+    image: "images/Nakano miku-01.jpg"
+  },
 ];
 
 // ELEMENTS
