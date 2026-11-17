@@ -2,44 +2,44 @@
 const photos = [
   {
     name: "Violet Evergarden",
-    cosplayer: "Violet Evergarden",
+    title: "Violet Evergarden",
     category: "Anime",
-    type: "Anime",
+    type: "Violet Evergarden",
     image: "images/Violet Evergarden-01.jpg"
   },
   {
     name: "2B",
-    cosplayer: "2B",
+    title: "Nier Automata",
     category: "Game",
-    type: "Game",
+    type: "Nier Automata",
     image: "images/2b-01.jpg"
   },
   {
     name: "Echidna",
-    cosplayer: "Echidna",
+    title: "Re:zero",
     category: "Anime",
-    type: "Anime",
+    type: "Re: Zero",
     image: "images/Echidna-01.jpg"
   },
   {
     name: "Kuchiki Rukia",
-    cosplayer: "Kuchiki Rukia",
+    title: "Bleach",
     category: "Anime",
-    type: "Anime",
+    type: "Bleach",
     image: "images/Kuchiki Rukia-01.jpg"
   },
   {
     name: "Cartethyia",
-    cosplayer: "Cartethyia",
+    title: "Wuthering Waves",
     category: "Game",
-    type: "Game",
+    type: "Wuthering Waves",
     image: "images/Cartethyia-01.jpg"
   },
   {
     name: "Liu shen",
-    cosplayer: "Liu shen",
+    title: "Perfect World",
     category: "Donghua",
-    type: "Donghua",
+    type: "Perfect World",
     image: "images/Liu shen-01.jpg"
   },
 ];
@@ -89,7 +89,7 @@ photos.forEach(photo => {
 
   card.className = "photo-card";
   card.dataset.name = photo.name;
-  card.dataset.cosplayer = photo.cosplayer;
+  card.dataset.title = photo.title;
   card.dataset.category = photo.category;
 
   card.innerHTML = `
@@ -125,7 +125,7 @@ photos.forEach(photo => {
   lightboxImage.src = img.src;
   lightboxTitle.textContent = photo.name;
   lightboxArtist.textContent =
-    "Cosplayer: " + photo.cosplayer;
+    "Title: " + photo.title;
 
   lightbox.classList.add("show");
 });
@@ -166,7 +166,7 @@ function filterGallery() {
 
   cards.forEach(card => {
     const name = card.dataset.name.toLowerCase();
-    const cosplayer = card.dataset.cosplayer.toLowerCase();
+    const title = card.dataset.title.toLowerCase();
     const category = card.dataset.category;
 
     const matchesSearch =
