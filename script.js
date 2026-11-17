@@ -41,6 +41,7 @@ const photos = [
     category: "Donghua",
     type: "Donghua",
     image: "images/Liu shen-01.jpg"
+  },
 ];
 
 // ELEMENTS
