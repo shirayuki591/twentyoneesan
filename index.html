@@ -1,0 +1,158 @@
+<index.html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Twentyoneesan Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Twentyoneesan</h1>
+    <p>Cosplay Gallery</p>
+  </header>
+
+  <main>
+
+    <section class="welcome">
+      <span class="eyebrow">THE ART OF COSPLAY</span>
+      <h2>Discover Beautiful Cosplay</h2>
+      <p>A little collection of wonderful characters.</p>
+    </section>
+
+    <section class="gallery">
+
+      <div class="gallery-heading">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>Explore Gallery</h2>
+        </div>
+      </div>
+
+      <div class="tools">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search character or cosplayer..."
+        >
+
+        
+<div class="categories">
+  <button class="category active" data-category="All">All</button>
+  <button class="category" data-category="Violet Evergarden">Violet Evergarden</button>
+  <button class="category" data-category="Re:Zero">Re:Zero</button>
+  <button class="category" data-category="Bleach">Bleach</button>
+  <button class="category" data-category="86">86</button>
+  <button class="category" data-category="Favorites">♥ Favorites</button>
+</div>
+
+      </div>
+
+      <div class="masonry" id="galleryGrid">
+
+        <article class="photo-card"
+          data-name="Violet Evergarden"
+          data-cosplayer="Violet Evergarden"
+          data-category="Violet Evergarden">
+          <div class="photo-frame">
+            <img src="images/Violet evergarden-01.jpg" alt="Violet Evergarden">
+            <span class="photo-fallback">Violet Evergarden</span>
+            <button class="favorite" aria-label="Add to favorites">♡</button>
+          </div>
+          <div class="photo-info">
+            <h3>Violet Evergarden</h3>
+            <p>Anime · Violet Evergarden</p>
+          </div>
+        </article>
+
+        <article class="photo-card"
+          data-name="NieR Automata"
+          data-cosplayer="2B"
+          data-category="Game">
+          <div class="photo-frame">
+            <img src="images/2b-01.jpg" alt="NieR Automata">
+            <span class="photo-fallback">NieR: Automata</span>
+            <button class="favorite" aria-label="Add to favorites">♡</button>
+          </div>
+          <div class="photo-info">
+            <h3>2B</h3>
+            <p>Game · NieR Automata</p>
+          </div>
+        </article>
+
+        <article class="photo-card"
+          data-name="Re:Zero"
+          data-cosplayer="Echidna"
+          data-category="Re:Zero">
+          <div class="photo-frame">
+            <img src="images/Echidna-01.jpg" alt="Re:Zero">
+            <span class="photo-fallback">Anime Collection</span>
+            <button class="favorite" aria-label="Add to favorites">♡</button>
+          </div>
+          <div class="photo-info">
+            <h3>Echidna</h3>
+            <p>Anime · Re:Zero</p>
+          </div>
+        </article>
+
+        <article class="photo-card"
+          data-name="Bleach"
+          data-cosplayer="Kuchiki Rukia"
+          data-category="Bleach">
+          <div class="photo-frame">
+            <img src="images/cosplay-04.jpg" alt="Original character cosplay">
+            <span class="photo-fallback">Original Character</span>
+            <button class="favorite" aria-label="Add to favorites">♡</button>
+          </div>
+          <div class="photo-info">
+            <h3>Kuchiki Rukia</h3>
+            <p>Anime · Bleach</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="emptyMessage" class="empty-message" hidden>
+        No photos found.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Twentyoneesan Gallery</p>
+    <span>Made with appreciation for cosplay art.</span>
+  </footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+
+  <button class="lightbox-close" id="closeLightbox">
+    &times;
+  </button>
+
+  <div class="lightbox-content">
+    <img id="lightboxImage" src="" alt="Cosplay preview">
+
+    <div class="lightbox-info">
+      <h2 id="lightboxTitle"></h2>
+      <p id="lightboxArtist"></p>
+    </div>
+  </div>
+
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+

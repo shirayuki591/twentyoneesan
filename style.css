@@ -1,0 +1,288 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #292536;
+  line-height: 1.6;
+}
+
+.header {
+  padding: 25px 7%;
+  text-align: center;
+  border-bottom: 1px solid #eeeaf3;
+}
+
+.header h1 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: #514269;
+}
+
+.header p {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #a18eae;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 6%;
+}
+
+.welcome {
+  text-align: center;
+  padding: 65px 15px;
+  background: #f8f5fb;
+  border-radius: 18px;
+  margin-bottom: 55px;
+}
+
+.eyebrow {
+  color: #a18eae;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.welcome h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #514269;
+  margin: 12px 0;
+}
+
+.welcome p {
+  color: #887c91;
+  font-size: 13px;
+}
+
+.gallery-heading {
+  margin-bottom: 22px;
+}
+
+.gallery-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.tools {
+  margin-bottom: 25px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 14px 17px;
+  border: 1px solid #eeeaf3;
+  border-radius: 10px;
+  outline: none;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+#searchInput:focus {
+  border-color: #a18eae;
+}
+
+.categories {
+  display: flex;
+  gap: 9px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.category {
+  border: 1px solid #eeeaf3;
+  background: white;
+  color: #776b82;
+  border-radius: 30px;
+  padding: 9px 17px;
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.category.active {
+  background: #514269;
+  color: white;
+  border-color: #514269;
+}
+
+/* PINTEREST MASONRY */
+
+.masonry {
+  columns: 2;
+  column-gap: 15px;
+}
+
+.photo-card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 22px;
+  break-inside: avoid;
+}
+
+.photo-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f3eff7;
+}
+
+
+.photo-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+
+.photo-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+  color: #78678d;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: rgba(255,255,255,.9);
+  color: #665078;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.favorite.liked {
+  color: #d36b91;
+}
+
+.photo-info {
+  padding: 9px 2px;
+}
+
+.photo-info h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.photo-info p {
+  font-size: 10px;
+  color: #a49baa;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  color: #a49baa;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  border-top: 1px solid #eeeaf3;
+  color: #a49baa;
+  font-size: 11px;
+}
+
+footer span {
+  display: block;
+  margin-top: 5px;
+}
+
+@media (min-width: 700px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+@media (min-width: 1000px) {
+  .masonry {
+    columns: 4;
+  }
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(20, 17, 25, 0.94);
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.lightbox.show {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  text-align: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 72vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.lightbox-info {
+  color: white;
+  margin-top: 15px;
+}
+
+.lightbox-info h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.lightbox-info p {
+  color: #c5b9d0;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 38px;
+  cursor: pointer;
+}
