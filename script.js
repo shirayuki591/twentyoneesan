@@ -163,10 +163,11 @@ photos.forEach(photo => {
   galleryGrid.appendChild(card);
 });
 
+
 // FILTER GALLERY
 
 function filterGallery() {
-  const search = searchInput.value.toLowerCase();
+  const search = searchInput.value.toLowerCase().trim();
   const cards = document.querySelectorAll(".photo-card");
 
   let visibleCount = 0;
@@ -174,18 +175,18 @@ function filterGallery() {
   cards.forEach(card => {
     const name = card.dataset.name.toLowerCase();
     const title = card.dataset.title.toLowerCase();
-    const category = card.dataset.category;
+    const category = card.dataset.category.toLowerCase();
 
     const matchesSearch =
       name.includes(search) ||
-      cosplayer.toLowerCase().includes(search) ||
-      category.toLowerCase().includes(search);
+      title.includes(search) ||
+      category.includes(search);
 
     const matchesCategory =
       activeCategory === "All" ||
       (activeCategory === "Favorites"
         ? card.querySelector(".favorite").classList.contains("liked")
-        : category === activeCategory);
+        : category === activeCategory.toLowerCase());
 
     const show = matchesSearch && matchesCategory;
 
@@ -196,6 +197,7 @@ function filterGallery() {
 
   emptyMessage.hidden = visibleCount !== 0;
 }
+
 
 // SEARCH
 
