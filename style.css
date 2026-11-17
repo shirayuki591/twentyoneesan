@@ -38,13 +38,70 @@ main {
   padding: 40px 6%;
 }
 
+
 .welcome {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
   text-align: center;
   padding: 65px 15px;
   background: #f8f5fb;
   border-radius: 18px;
   margin-bottom: 55px;
 }
+
+/* FOTO BACKGROUND */
+.welcome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(248,245,251,0.05),
+      rgba(248,245,251,0.25) 50%,
+      #ffffff 100%
+    ),
+    url("images/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* EFEK BLUR BERTAHAP */
+.welcome::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 15%,
+    rgba(0,0,0,0.3) 45%,
+    black 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 15%,
+    rgba(0,0,0,0.3) 45%,
+    black 100%
+  );
+}
+
+/* TULISAN TETAP TAJAM */
+.welcome > * {
+  position: relative;
+  z-index: 2;
+}
+
 
 .eyebrow {
   color: #a18eae;
