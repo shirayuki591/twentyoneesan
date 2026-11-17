@@ -345,3 +345,21 @@ footer span {
   font-size: 38px;
   cursor: pointer;
 }
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #8b75a8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #c49be8;
+}
