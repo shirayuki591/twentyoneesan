@@ -43,11 +43,11 @@ const photos = [
     image: "images/Liu shen-01.jpg"
   },
   {
-    name: "Nakano miku",
+    name: "Nakano Miku",
     title: "Gotobun no hanayome",
     category: "Anime",
     type: "Gotobun no hanayome",
-    image: "images/Nakano miku-01.jpg"
+    image: "images/Nakano Miku-01.jpg"
   },
 ];
 
