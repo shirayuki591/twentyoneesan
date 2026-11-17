@@ -34,7 +34,13 @@ const photos = [
     category: "Game",
     type: "Game",
     image: "images/Cartethyia-01.jpg"
-},
+  },
+  {
+    name: "Liu shen",
+    cosplayer: "Liu shen",
+    category: "Donghua",
+    type: "Donghua",
+    image: "images/Liu shen-01.jpg"
 ];
 
 // ELEMENTS
