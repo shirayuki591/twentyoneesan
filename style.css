@@ -186,6 +186,7 @@ main {
   width: 100%;
   margin-bottom: 22px;
   break-inside: avoid;
+  vertical-align: top;
 }
 
 .photo-frame {
@@ -204,6 +205,7 @@ main {
   object-fit: cover;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 
