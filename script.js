@@ -201,7 +201,13 @@ function filterGallery() {
 
 // SEARCH
 
-searchInput.addEventListener("input", filterGallery);
+searchInput.addEventListener("input", function() {
+  filterGallery();
+});
+
+searchInput.addEventListener("keyup", function() {
+  filterGallery();
+});
 
 // CATEGORY FILTER
 
