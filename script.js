@@ -70,6 +70,13 @@ const photos = [
     type: "Wuthering Waves",
     image: "images/Phrolova-01.jpg"
   },
+  {
+    name: "Marin Kitagawa",
+    title: "My dress up darling",
+    category: "Anime",
+    type: "My dress up darling",
+    image: "images/Marin Kitagawa-01.jpg"
+  },
 ];
 
 // ELEMENTS
