@@ -77,6 +77,27 @@ const photos = [
     type: "My dress up darling",
     image: "images/Marin Kitagawa-01.jpg"
   },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-04.jpg"
+  },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-05.jpg"
+  },
+  {
+    name: "Kaoruko Waguri",
+    title: "Kaoru hana rin to saku",
+    category: "Anime",
+    type: "Kaoru hana rin to saku",
+    image: "images/Kaoruko Waguri-02.jpg"
+  },
 ];
 
 // ELEMENTS
