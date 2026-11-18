@@ -56,6 +56,13 @@ const photos = [
     type: "Violet Evergarden",
     image: "images/Violet Evergarden-02.jpg"
   },
+  {
+    name: "Kaoruko Waguri",
+    title: "Kaoru hana rin to saku",
+    category: "Anime",
+    type: "Kaoru hana rin to saku",
+    image: "images/Kaoruko Waguri-01.jpg"
+  },
 ];
 
 // ELEMENTS
