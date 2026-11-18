@@ -98,6 +98,13 @@ const photos = [
     type: "Kaoru hana rin to saku",
     image: "images/Kaoruko Waguri-02.jpg"
   },
+  {
+    name: "Cartethyia",
+    title: "Wuthering Waves",
+    category: "Game",
+    type: "Wuthering Waves",
+    image: "images/Cartethyia-02.jpg"
+  },
 ];
 
 // ELEMENTS
