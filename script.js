@@ -155,28 +155,28 @@ const photos = [
     image: "images/Violet Evergarden-10.jpg"
   },
   {
-    name: "Fluerdelys",
+    name: "Fleurdelys",
     title: "Wuthering Waves",
     category: "Game",
     type: "Wuthering Waves",
     image: "images/Fleurdelys-01.jpg"
   },
   {
-    name: "Fluerdelys",
+    name: "Fleurdelys",
     title: "Wuthering Waves",
     category: "Game",
     type: "Wuthering Waves",
     image: "images/Fleurdelys-02.jpg"
   },
   {
-    name: "Fluerdelys",
+    name: "Fleurdelys",
     title: "Wuthering Waves",
     category: "Game",
     type: "Wuthering Waves",
     image: "images/Fleurdelys-03.jpg"
   },
   {
-    name: "Fluerdelys",
+    name: "Fleurdelys",
     title: "Wuthering Waves",
     category: "Game",
     type: "Wuthering Waves",
