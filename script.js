@@ -154,6 +154,34 @@ const photos = [
     type: "Violet Evergarden",
     image: "images/Violet Evergarden-10.jpg"
   },
+  {
+    name: "Fluerdelys",
+    title: "Wuthering Waves",
+    category: "Game",
+    type: "Wuthering Waves",
+    image: "images/Fleurdelys-01.jpg"
+  },
+  {
+    name: "Fluerdelys",
+    title: "Wuthering Waves",
+    category: "Game",
+    type: "Wuthering Waves",
+    image: "images/Fleurdelys-02.jpg"
+  },
+  {
+    name: "Fluerdelys",
+    title: "Wuthering Waves",
+    category: "Game",
+    type: "Wuthering Waves",
+    image: "images/Fleurdelys-03.jpg"
+  },
+  {
+    name: "Fluerdelys",
+    title: "Wuthering Waves",
+    category: "Game",
+    type: "Wuthering Waves",
+    image: "images/Fleurdelys-04.jpg"
+  },
 ];
 
 // ELEMENTS
