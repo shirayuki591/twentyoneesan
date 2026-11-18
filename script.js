@@ -105,6 +105,20 @@ const photos = [
     type: "Wuthering Waves",
     image: "images/Cartethyia-02.jpg"
   },
+  {
+    name: "Marin Kitagawa",
+    title: "My dress up darling",
+    category: "Anime",
+    type: "My dress up darling",
+    image: "images/Marin Kitagawa-02.jpg"
+  },
+  {
+    name: "Columbina",
+    title: "Genshin impact",
+    category: "Game",
+    type: "Genshin impact",
+    image: "images/Columbina-01.jpg"
+  },
 ];
 
 // ELEMENTS
