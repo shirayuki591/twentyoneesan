@@ -49,6 +49,13 @@ const photos = [
     type: "Gotobun no hanayome",
     image: "images/Nakano Miku-01.jpg"
   },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-02.jpg"
+  },
 ];
 
 // ELEMENTS
