@@ -119,6 +119,41 @@ const photos = [
     type: "Genshin impact",
     image: "images/Columbina-01.jpg"
   },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-06.jpg"
+  },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-07.jpg"
+  },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-08.jpg"
+  },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-09.jpg"
+  },
+  {
+    name: "Violet Evergarden",
+    title: "Violet Evergarden",
+    category: "Anime",
+    type: "Violet Evergarden",
+    image: "images/Violet Evergarden-10.jpg"
+  },
 ];
 
 // ELEMENTS
