@@ -63,6 +63,13 @@ const photos = [
     type: "Kaoru hana rin to saku",
     image: "images/Kaoruko Waguri-01.jpg"
   },
+  {
+    name: "Phrolova",
+    title: "Wuthering Waves",
+    category: "Game",
+    type: "Wuthering Waves",
+    image: "images/Phrolova-01.jpg"
+  },
 ];
 
 // ELEMENTS
