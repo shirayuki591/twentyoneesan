@@ -203,6 +203,13 @@ let savedFavorites = JSON.parse(
   localStorage.getItem("favorites") || "[]"
 );
 
+// RANDOM PHOTO ORDER
+for (let i = photos.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+
+  [photos[i], photos[j]] = [photos[j], photos[i]];
+}
+
 // CREATE CATEGORY BUTTONS
 
 const categories = [
